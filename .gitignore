@@ -10,7 +10,7 @@
 build/
 
 # Debugging and IDE files
-/.vscode/
+.vscode/
 *.swp
 *.bak
 *.tmp
