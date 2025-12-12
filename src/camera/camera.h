@@ -5,10 +5,12 @@
 #include <SDL2/SDL.h>
 
 typedef struct {
-    float position[3]; 
-    float rotation[3]; 
-    float fov;         
-    bool isometric;    
+    float position[3];
+    float yaw;
+    float pitch;
+    float roll;
+    float fov;
+    bool isometric;
 } Camera;
 
 void init_camera(Camera *cam);

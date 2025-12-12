@@ -7,7 +7,7 @@ int create_sdl_window(int width, int height);
 
 typedef struct {
     void* sdl_window;
-    void* sdl_renderer;
+    void* gl_context;
     int width;
     int height;
     Camera cam;
