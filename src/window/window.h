@@ -2,8 +2,9 @@
 #define WINDOW_H
 
 #include "camera/camera.h"
+#include "scenes/scene.h"
 
-int create_sdl_window(int width, int height);
+int create_sdl_window(int width, int height, Scene* scene);
 
 typedef struct {
     void* sdl_window;

@@ -23,19 +23,16 @@ void project(float world[3], Camera *cam, int screen_width, int screen_height, i
     float y = world[1] - cam->position[1];
     float z = world[2] - cam->position[2];
 
-    // Pitch first (around X)
     float cos_pitch = cosf(cam->pitch * M_PI / 180.0f);
     float sin_pitch = sinf(cam->pitch * M_PI / 180.0f);
     float y1 = y * cos_pitch - z * sin_pitch;
     float z1 = y * sin_pitch + z * cos_pitch;
 
-    // Then yaw (around Y)
     float cos_yaw = cosf(cam->yaw * M_PI / 180.0f);
     float sin_yaw = sinf(cam->yaw * M_PI / 180.0f);
     float x2 = x * cos_yaw - z1 * sin_yaw;
     float z2 = x * sin_yaw + z1 * cos_yaw;
 
-    // Then roll (around Z)
     float roll_rad = cam->roll * M_PI / 180.0f;
     float cos_roll = cosf(roll_rad);
     float sin_roll = sinf(roll_rad);

@@ -8,8 +8,8 @@ all: $(TARGET)
 build:
 	mkdir -p build
 
-$(TARGET): src/main.c src/camera/camera.c src/camera/camera_movement.c | build
-	$(CC) -o $(TARGET) src/main.c src/camera/camera.c src/camera/camera_movement.c $(CFLAGS) $(LDFLAGS)
+$(TARGET): src/main.c src/window/window.c src/voxel/voxel.c scenes/scene.c src/camera/camera.c src/camera/camera_movement.c | build
+	$(CC) -o $(TARGET) src/main.c src/window/window.c src/voxel/voxel.c scenes/scene.c src/camera/camera.c src/camera/camera_movement.c -I src -I . $(CFLAGS) $(LDFLAGS)
 
 run: $(TARGET)
 	./$(TARGET)
