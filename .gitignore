@@ -5,11 +5,17 @@
 *.dll
 *.so
 *.dylib
-¯
+
+# Build directory
+build/
+
 # Debugging and IDE files
-.vscode/
+/.vscode/
 *.swp
 *.bak
 *.tmp
 *~
-¯
+
+# OS files
+.DS_Store
+Thumbs.db
