@@ -1,14 +1,15 @@
-# Build directory
-build/
-
-# Object files
+# Binaries
 *.o
-
-# Executables
-main
-
-# macOS
-.DS_Store
-
-# IDE
+*.out
+*.exe
+*.dll
+*.so
+*.dylib
+¯
+# Debugging and IDE files
 .vscode/
+*.swp
+*.bak
+*.tmp
+*~
+¯
